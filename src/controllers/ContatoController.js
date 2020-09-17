@@ -37,7 +37,7 @@ module.exports = {
                 return response.json({ "Status": "Alterado com Sucesso!" });
             }
         
-            return response.status(400).json({ "Status": "Contato não encontrado!" });
+            return response.status(400).json({ "Status": "ID de Contato não encontrado!" });
         }catch(error){
             next(error)
         }
@@ -54,6 +54,6 @@ module.exports = {
             return response.json({ contato, "Status": "Removido com Sucesso" });
         }
 
-        return response.status(400).json({ "Status": "Contato não encontrado!" });
+        return response.status(400).json({ "Status": "ID de Contato não encontrado!" });
     }
 };
