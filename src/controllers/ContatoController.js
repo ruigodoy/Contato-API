@@ -1,5 +1,5 @@
 const crypt = require('crypto');
-const connection = require('../database/connections');
+const connection = require('../database/connections.js');
 
 module.exports = {
 
